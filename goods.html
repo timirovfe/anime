@@ -1,0 +1,1463 @@
+
+<html>
+  <head><meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml"/>
+    <link href="css/style.min.css?_v=20220927183844" rel="stylesheet"/>
+    <link href="libs/slick/slick.css?_v=20220927183844" rel="stylesheet"/>
+    <link href="libs/slick/slick-theme.css?_v=20220927183844" rel="stylesheet"/>
+    <link href="libs/CustomScrollbar/CustomScrollbar.min.css?_v=20220927183844" rel="stylesheet"/>
+    <title>Каталог товаров</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header__wrapper"><a class="header__logo" href="./index.html"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="icon"/></picture></a>
+          <button class="header__logo-main">
+            <div class="wrapper-block">
+              <div class="wrapper-block__img" onclick="openNav()"><img src="img/logo-btn.svg" alt="icon"/></div><a class="wrapper-block__img" href="./index.html"><img src="img/logo-mob.svg" alt="icon"/></a>
+            </div>
+          </button>
+          <button class="header__menu" onclick="openNav()">
+            <div class="wrapper-block">
+              <div class="wrapper-block__img"><img src="img/header-btn.svg" alt="icon"/></div>
+              <p>Меню</p>
+            </div>
+          </button>
+          <div class="header__input">
+            <input class="header__search" type="text" name="header__search" placeholder="Поиск по названию"/>
+            <button class="header__magnifier"><img src="img/header-search.svg" alt="img"/></button>
+            <button class="header__toclose"><img src="img/to-close.svg" alt="img"/></button>
+            <div class="header__hint"><a href="#">Текстовая ссылка</a><a href="#">Текстовая ссылка</a><a href="#">Текстовая ссылка</a><a href="#">Текстовая ссылка</a><a href="#">Текстовая ссылка</a></div>
+          </div>
+          <div class="header__text">
+            <p>Остались вопросы?</p>
+            <p> <span>Напишите нам</span></p>
+          </div>
+          <div class="header__social"><a href="#"><img src="img/icon-vk.svg" alt="icon"/></a><a href="#"><img src="img/icon-tg.svg" alt="icon"/></a></div>
+          <div class="header__shop">
+            <div class="header__office"><a class="header__connect js-open-modal" href="#" data-modal="1"><img src="img/header-one.svg" alt="icon"/></a>
+              <div class="header__info-hiht">Войти в личный кабинет</div>
+            </div>
+            <div class="header__like"><a href="#"><img src="img/header-two.svg" alt="icon"/></a>
+              <div class="header__info-hiht">В избранном 22 товара</div>
+              <div class="header__remember">22</div>
+            </div>
+            <div class="header__basket"><a href="#"><img src="img/header-three.svg" alt="icon"/></a>
+              <div class="header__info-hiht">В корзине 22 товара</div>
+              <div class="header__buy">22</div>
+            </div>
+          </div>
+        </div>
+        <div class="header__btn">
+          <button class="header__menu" onclick="openNav()">
+            <div class="wrapper-block">
+              <div class="wrapper-block__img"><img src="img/header-btn.svg" alt="icon"/></div>
+              <p>Меню</p>
+            </div>
+          </button>
+          <div class="header__tag"><a class="header__select active-tag header__select_one" href="#">Предзаказы</a><a class="header__select active-tag header__select_two" href="#">Скидки</a><a class="header__select" href="#">Литература</a><a class="header__select" href="#">Аксессуары</a><a class="header__select" href="#">Одежда</a><a class="header__select" href="#">Игрушки</a><a class="header__select" href="#">Косплей</a><a class="header__select" href="#">Канцелярия</a><a class="header__select" href="#">Игры</a></div>
+        </div>
+        <div class="overlay-back"></div>
+        <div class="header__overlay" id="myNav">
+          <button class="header__closebtn" onclick="closeNav()"><img src="img/menu-close.svg" alt="close"/></button>
+          <div class="header__overlay-content">
+            <div class="header__overlay-logo"> <img src="img/menu-logo.svg" alt="img" loading="lazy"/></div>
+            <div class="header__overlay-btn" data-mcs-theme="3d-dark">
+              <div class="header__input">
+                <input class="header__search header__search_mob" type="text" name="header__search" placeholder="Поиск по названию"/>
+                <button class="header__magnifier"><img src="img/header-search.svg" alt="img"/></button>
+                <button class="header__toclose"><img src="img/to-close.svg" alt="img"/></button>
+                <div class="header__hint"><a href="#">Текстовая ссылка</a><a href="#">Текстовая ссылка</a><a href="#">Текстовая ссылка</a><a href="#">Текстовая ссылка</a><a href="#">Текстовая ссылка</a></div>
+              </div><a class="spoler__target" onclick="view(this, 't1'); return false">Каталог товаров</a>
+              <p class="spoler__content menu__catalog" id="t1"><a href="./goods.html">Игры</a><a href="./goods.html">Одежда</a><a href="./goods.html">Игрушки</a><a href="./goods.html">Косплей</a><a href="./goods.html">Сувениры</a><a href="./goods.html">Литература</a><a href="./goods.html">Атрибутика</a><a href="./goods.html">Аксессуары</a><a href="./goods.html">Канцелярия</a><a href="./goods.html">Конструктор</a><a href="./goods.html">Хобби и творчество</a><a href="./goods.html">Дом и быт</a><a href="./goods.html">Прочее</a><a href="./goods.html">Скидки</a></p><a href="./catalog.html">О нас</a><a href="./payment.html">Доставка и оплата</a><a href="./cart.html">Возврат и гарантия</a><a href="#">Статьи</a><a href="#">Отзывы</a><a href="#">Новости</a><a href="#">Контакты</a><a href="#">F.A.Q</a>
+            </div>
+            <div class="header__overlay-bot"> 
+              <div class="header__shop">
+                <div class="header__office"><a class="header__connect js-open-modal" href="#" data-modal="1"><img src="img/header-one.svg" alt="icon"/></a>
+                  <div class="header__info-hiht">Войти в личный кабинет</div>
+                </div>
+                <div class="header__like"><a href="#"><img src="img/header-two.svg" alt="icon"/></a>
+                  <div class="header__info-hiht">В избранном 22 товара</div>
+                  <div class="header__remember">22</div>
+                </div>
+                <div class="header__basket"><a href="#"><img src="img/header-three.svg" alt="icon"/></a>
+                  <div class="header__info-hiht">В корзине 22 товара</div>
+                  <div class="header__buy">22</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="page">
+      <section class="navigation-section">
+        <div class="container">
+          <div class="navigation"><a href="./index.html">Главная</a><a href="./catalog.html">Каталог</a>
+            <p>Игрушки</p>
+          </div>
+        </div>
+      </section>
+      <section class="goods-section">
+        <div class="container">
+          <div class="goods">
+            <h2>Игрушки</h2>
+            <div class="goods__top">
+              <div class="goods__slider">
+                <div class="slider-content"><a class="goods__item" href="#" style="background-image: url(img/goods-back_one.png);">
+                    <p>Фигурки</p><picture><source srcset="img/goods-img_one.webp" type="image/webp"><img src="img/goods-img_one.png" alt="img"/></picture></a></div>
+                <div class="slider-content"><a class="goods__item" href="#" style="background-image: url(img/goods-back_two.png);">
+                    <p>Funko</p><picture><source srcset="img/goods-img_two.webp" type="image/webp"><img src="img/goods-img_two.png" alt="img"/></picture></a></div>
+                <div class="slider-content"><a class="goods__item" href="#" style="background-image: url(img/goods-back_three.png);">
+                    <p>Оригинальные</p><picture><source srcset="img/goods-img_three.webp" type="image/webp"><img src="img/goods-img_three.png" alt="img"/></picture></a></div>
+                <div class="slider-content"><a class="goods__item" href="#" style="background-image: url(img/goods-back_four.png);">
+                    <p>Nendoroid</p><picture><source srcset="img/goods-img_four.webp" type="image/webp"><img src="img/goods-img_four.png" alt="img"/></picture></a></div>
+                <div class="slider-content"><a class="goods__item" href="#" style="background-image: url(img/goods-back_five.png);">
+                    <p>Акриловые</p><picture><source srcset="img/goods-img_five.webp" type="image/webp"><img src="img/goods-img_five.png" alt="img"/></picture></a></div>
+                <div class="slider-content"><a class="goods__item" href="#" style="background-image: url(img/goods-back_one.png);">
+                    <p>Фигурки</p><picture><source srcset="img/goods-img_one.webp" type="image/webp"><img src="img/goods-img_one.png" alt="img"/></picture></a></div>
+                <div class="slider-content"><a class="goods__item" href="#" style="background-image: url(img/goods-back_two.png);">
+                    <p>Funko</p><picture><source srcset="img/goods-img_two.webp" type="image/webp"><img src="img/goods-img_two.png" alt="img"/></picture></a></div>
+                <div class="slider-content"><a class="goods__item" href="#" style="background-image: url(img/goods-back_three.png);">
+                    <p>Оригинальные</p><picture><source srcset="img/goods-img_three.webp" type="image/webp"><img src="img/goods-img_three.png" alt="img"/></picture></a></div>
+                <div class="slider-content"><a class="goods__item" href="#" style="background-image: url(img/goods-back_four.png);">
+                    <p>Nendoroid</p><picture><source srcset="img/goods-img_four.webp" type="image/webp"><img src="img/goods-img_four.png" alt="img"/></picture></a></div>
+                <div class="slider-content"><a class="goods__item" href="#" style="background-image: url(img/goods-back_five.png);">
+                    <p>Акриловые</p><picture><source srcset="img/goods-img_five.webp" type="image/webp"><img src="img/goods-img_five.png" alt="img"/></picture></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="goods-tabs">
+        <div class="container">
+          <div class="goods-tabs__wrapper">
+            <div class="goods-tabs__slider">
+              <div class="slider-content"><a href="#">Атака титанов</a></div>
+              <div class="slider-content"><a href="#">Токийский гуль</a></div>
+              <div class="slider-content"><a href="#">Мастера меча онлайн</a></div>
+              <div class="slider-content"><a href="#">Наруто</a></div>
+              <div class="slider-content"><a href="#">Моя геройская академия</a></div>
+              <div class="slider-content"><a href="#">Клинок, рассекающий демонов</a></div>
+              <div class="slider-content"><a href="#">Стальной алхимик</a></div>
+              <div class="slider-content"><a href="#">Научные приключения</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="trading-section">
+        <div class="container">
+          <div class="trading">
+            <div class="trading__filter">
+              <div class="trading__overlay" id="trading-filter">
+                <button class="header__closebtn" onclick="closeFilter()"><img src="img/menu-close.svg" alt="close"/></button>
+                <div class="trading__overlay-content">
+                  <p class="trading__quantity">195 товаров</p>
+                  <p class="trading__price">Цена</p>
+                  <div class="trading__wrapper trading__wrapper_main">
+                    <div class="trading__range">
+                      <div class="trading__input">
+                        <input class="trading__input-left trading__input-left_main" type="number" oninput="update(this)"/>
+                        <div class="trading__input-start">от</div>
+                      </div>
+                      <div class="trading__input">
+                        <input class="trading__input-right trading__input-right_main" type="number" oninput="update(this)"/>
+                        <div class="trading__input-start">до</div>
+                      </div>
+                    </div>
+                    <div class="trading__line trading__line_main"></div>
+                  </div>
+                  <div class="trading_choice">
+                    <div class="trading_choice-item">
+                      <div class="trading_choice-btn accordion-item">Франшиза</div>
+                      <div class="trading_choice-list">
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check5"/>
+                            <label for="check5">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check6"/>
+                            <label for="check6">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check7"/>
+                            <label for="check7">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check8"/>
+                            <label for="check8">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check9"/>
+                            <label for="check9">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check10"/>
+                            <label for="check10">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check11"/>
+                            <label for="check11">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check12"/>
+                            <label for="check12">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check13"/>
+                            <label for="check13">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check14"/>
+                            <label for="check14">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check15"/>
+                            <label for="check15">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check16"/>
+                            <label for="check16">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check17"/>
+                            <label for="check17">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check18"/>
+                            <label for="check18">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="trading_choice-item">
+                      <div class="trading_choice-btn accordion-item">Вид товара</div>
+                      <div class="trading_choice-list">
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check19"/>
+                            <label for="check19">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check20"/>
+                            <label for="check20">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check21"/>
+                            <label for="check21">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check22"/>
+                            <label for="check22">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check23"/>
+                            <label for="check23">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check24"/>
+                            <label for="check24">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check25"/>
+                            <label for="check25">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check26"/>
+                            <label for="check26">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check27"/>
+                            <label for="check27">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check28"/>
+                            <label for="check28">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check29"/>
+                            <label for="check29">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check30"/>
+                            <label for="check30">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check31"/>
+                            <label for="check31">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check32"/>
+                            <label for="check32">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="trading_choice-item">
+                      <div class="trading_choice-btn accordion-item">Бренд</div>
+                      <div class="trading_choice-list">
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check33"/>
+                            <label for="check33">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check34"/>
+                            <label for="check34">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check35"/>
+                            <label for="check35">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check36"/>
+                            <label for="check36">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check37"/>
+                            <label for="check37">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check38"/>
+                            <label for="check38">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check39"/>
+                            <label for="check39">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check40"/>
+                            <label for="check40">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check41"/>
+                            <label for="check41">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check42"/>
+                            <label for="check42">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check43"/>
+                            <label for="check43">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check44"/>
+                            <label for="check44">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check45"/>
+                            <label for="check45">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check46"/>
+                            <label for="check46">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="trading_choice-item">
+                      <div class="trading_choice-btn accordion-item">Материал</div>
+                      <div class="trading_choice-list">
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check47"/>
+                            <label for="check47">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check48"/>
+                            <label for="check48">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check49"/>
+                            <label for="check49">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check50"/>
+                            <label for="check50">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check51"/>
+                            <label for="check51">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check52"/>
+                            <label for="check52">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check53"/>
+                            <label for="check53">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check54"/>
+                            <label for="check54">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check55"/>
+                            <label for="check55">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check56"/>
+                            <label for="check56">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check57"/>
+                            <label for="check57">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check58"/>
+                            <label for="check58">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check59"/>
+                            <label for="check59">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check60"/>
+                            <label for="check60">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="trading_choice-item">
+                      <div class="trading_choice-btn accordion-item">Страна</div>
+                      <div class="trading_choice-list">
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check61"/>
+                            <label for="check61">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check62"/>
+                            <label for="check62">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check63"/>
+                            <label for="check63">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check64"/>
+                            <label for="check64">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check65"/>
+                            <label for="check65">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check66"/>
+                            <label for="check66">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check67"/>
+                            <label for="check67">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check68"/>
+                            <label for="check68">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check69"/>
+                            <label for="check69">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check70"/>
+                            <label for="check70">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check71"/>
+                            <label for="check71">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check72"/>
+                            <label for="check72">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check73"/>
+                            <label for="check73">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                        <div class="trading_choice-check">
+                          <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check74"/>
+                            <label for="check74">Текстовая ссылка</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="trading-menu-btn">
+                    <button class="trading__apply">Применить</button>
+                    <button class="trading__cancel">Сбросить</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="trading__list">
+              <div class="trading__top">
+                <div class="trading__check">
+                  <button class="trading__check-btn" onclick="openFilter()">
+                    <div class="wrapper-block">
+                      <div class="wrapper-block__img"><img src="img/check-btn.svg" alt="icon"/></div>
+                      <p>Фильтр</p>
+                    </div>
+                  </button>
+                  <div class="trading__check-wrapper">
+                    <div class="checkbox">
+                      <input class="custom-checkbox" type="checkbox" id="check1"/>
+                      <label for="check1">Акция</label>
+                    </div>
+                  </div>
+                  <div class="trading__check-wrapper">
+                    <div class="checkbox">
+                      <input class="custom-checkbox" type="checkbox" id="check2"/>
+                      <label for="check2">Топ</label>
+                    </div>
+                  </div>
+                  <div class="trading__check-wrapper">
+                    <div class="checkbox">
+                      <input class="custom-checkbox" type="checkbox" id="check3"/>
+                      <label for="check3">Новинки</label>
+                    </div>
+                  </div>
+                  <div class="trading__check-wrapper">
+                    <div class="checkbox">
+                      <input class="custom-checkbox" type="checkbox" id="check4"/>
+                      <label for="check4">Распродажа</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="trading__select">
+                  <div class="dropdown">
+                    <div class="select"><span>По популярности</span><i class="fa fa-chevron-left"></i></div>
+                    <input type="hidden" name="gender"/>
+                    <ul class="dropdown-menu">
+                      <li id="female">По цене</li>
+                      <li id="female">По жанру</li>
+                      <li id="female">По дате</li>
+                      <li id="male">По популярности</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="trading__list-adaptive">
+                <p class="trading__quantity">195 товаров</p>
+              </div>
+              <div class="trading__product"> 
+                <div class="card__item">
+                  <button class="card__hint js-open-modal" data-modal="2">
+                    <div class="wrapper-block">
+                      <div class="wrapper-block__img"><img src="img/hint-icon.svg" alt="icon"/></div>
+                      <p>Быстрый просмотр</p>
+                    </div>
+                  </button><a href="#">
+                    <div class="card__label-one"><picture><source srcset="img/sales-icon.webp" type="image/webp"><img class="card-sales" src="img/sales-icon.png" alt="img"/></picture></div>
+                    <div class="card__item-img"> <picture><source srcset="img/manga-one.webp" type="image/webp"><img src="img/manga-one.png" alt="img"/></picture></div>
+                    <p class="card__source">Манга</p>
+                    <p class="card__info">Манга Магическая Битва. Том 1</p>
+                    <div class="card__price">
+                      <p class="card__price-cost">790 <span>₽</span></p>
+                      <p class="card__price-old">990 <span>₽</span></p>
+                    </div></a>
+                  <div class="card__buttons">
+                    <button class="card__buttons-buy">В корзину</button>
+                    <button class="card__buttons-like">
+                      <svg class="icon">
+                        <use xlink:href="img/icons/icons.svg#btn-like"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="card__item">
+                  <button class="card__hint js-open-modal" data-modal="2">
+                    <div class="wrapper-block">
+                      <div class="wrapper-block__img"><img src="img/hint-icon.svg" alt="icon"/></div>
+                      <p>Быстрый просмотр</p>
+                    </div>
+                  </button><a href="#">
+                    <div class="card__label-one"><picture><source srcset="img/new-icon.webp" type="image/webp"><img class="card-new" src="img/new-icon.png" alt="img"/></picture></div>
+                    <div class="card__label-three"><img class="card-fire" src="img/fire-icon.svg" alt="img"/></div>
+                    <div class="card__item-img"> <picture><source srcset="img/manga-two.webp" type="image/webp"><img src="img/manga-two.png" alt="img"/></picture></div>
+                    <p class="card__source">Манга</p>
+                    <p class="card__info">Стальной Алхимик. Книга 16</p>
+                    <div class="card__price">
+                      <p class="card__price-cost">790 <span>₽</span></p>
+                    </div></a>
+                  <div class="card__buttons">
+                    <button class="card__buttons-buy">В корзину</button>
+                    <button class="card__buttons-like">
+                      <svg class="icon">
+                        <use xlink:href="img/icons/icons.svg#btn-like"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="card__item">
+                  <button class="card__hint js-open-modal" data-modal="2">
+                    <div class="wrapper-block">
+                      <div class="wrapper-block__img"><img src="img/hint-icon.svg" alt="icon"/></div>
+                      <p>Быстрый просмотр</p>
+                    </div>
+                  </button><a href="#">
+                    <div class="card__label-one"><picture><source srcset="img/sales-icon.webp" type="image/webp"><img class="card-sales" src="img/sales-icon.png" alt="img"/></picture></div>
+                    <div class="card__item-img"> <picture><source srcset="img/manga-four.webp" type="image/webp"><img src="img/manga-four.png" alt="img"/></picture></div>
+                    <p class="card__source">Манга</p>
+                    <p class="card__info">Стальной Алхимик. Книга 16</p>
+                    <div class="card__price">
+                      <p class="card__price-cost">790 <span>₽</span></p>
+                      <p class="card__price-old">990 <span>₽</span></p>
+                    </div></a>
+                  <div class="card__buttons">
+                    <button class="card__buttons-buy">В корзину</button>
+                    <button class="card__buttons-like">
+                      <svg class="icon">
+                        <use xlink:href="img/icons/icons.svg#btn-like"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="card__item">
+                  <button class="card__hint js-open-modal" data-modal="2">
+                    <div class="wrapper-block">
+                      <div class="wrapper-block__img"><img src="img/hint-icon.svg" alt="icon"/></div>
+                      <p>Быстрый просмотр</p>
+                    </div>
+                  </button><a href="#"> 
+                    <div class="card__label-one"><picture><source srcset="img/new-icon.webp" type="image/webp"><img class="card-new" src="img/new-icon.png" alt="img"/></picture></div>
+                    <div class="card__item-img"> <picture><source srcset="img/manga-five.webp" type="image/webp"><img src="img/manga-five.png" alt="img"/></picture></div>
+                    <p class="card__source">Манга</p>
+                    <p class="card__info">Восхождение Героя Щита. Том 16.</p>
+                    <div class="card__price">
+                      <p class="card__price-cost">790 <span>₽</span></p>
+                    </div></a>
+                  <div class="card__buttons">
+                    <button class="card__buttons-buy">В корзину</button>
+                    <button class="card__buttons-like">
+                      <svg class="icon">
+                        <use xlink:href="img/icons/icons.svg#btn-like"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="card__item">
+                  <button class="card__hint js-open-modal" data-modal="2">
+                    <div class="wrapper-block">
+                      <div class="wrapper-block__img"><img src="img/hint-icon.svg" alt="icon"/></div>
+                      <p>Быстрый просмотр</p>
+                    </div>
+                  </button><a href="#"> 
+                    <div class="card__label-one"><picture><source srcset="img/new-icon.webp" type="image/webp"><img class="card-new" src="img/new-icon.png" alt="img"/></picture></div>
+                    <div class="card__label-three"><img class="card-fire" src="img/fire-icon.svg" alt="img"/></div>
+                    <div class="card__item-img"> <picture><source srcset="img/hit-four.webp" type="image/webp"><img src="img/hit-four.png" alt="img"/></picture></div>
+                    <p class="card__source">Фигурки</p>
+                    <p class="card__info">Funko POP! Bobble: Star Wars: Mandalorian: The Child</p>
+                    <div class="card__price">
+                      <p class="card__price-cost">4 650 <span>₽</span></p>
+                    </div></a>
+                  <div class="card__buttons">
+                    <button class="card__buttons-buy">В корзину</button>
+                    <button class="card__buttons-like">
+                      <svg class="icon">
+                        <use xlink:href="img/icons/icons.svg#btn-like"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="card__item">
+                  <button class="card__hint js-open-modal" data-modal="2">
+                    <div class="wrapper-block">
+                      <div class="wrapper-block__img"><img src="img/hint-icon.svg" alt="icon"/></div>
+                      <p>Быстрый просмотр</p>
+                    </div>
+                  </button><a href="#"> 
+                    <div class="card__label-one"><picture><source srcset="img/new-icon.webp" type="image/webp"><img class="card-new" src="img/new-icon.png" alt="img"/></picture></div>
+                    <div class="card__label-three"><img class="card-fire" src="img/fire-icon.svg" alt="img"/></div>
+                    <div class="card__item-img"> <picture><source srcset="img/hit-one.webp" type="image/webp"><img src="img/hit-one.png" alt="img"/></picture></div>
+                    <p class="card__source">Фигурки</p>
+                    <p class="card__info">Funko POP! Animation Boruto Inojin</p>
+                    <div class="card__price">
+                      <p class="card__price-cost">1 899 <span>₽</span></p>
+                    </div></a>
+                  <div class="card__buttons">
+                    <button class="card__buttons-buy">В корзину</button>
+                    <button class="card__buttons-like">
+                      <svg class="icon">
+                        <use xlink:href="img/icons/icons.svg#btn-like"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="card__item">
+                  <button class="card__hint js-open-modal" data-modal="2">
+                    <div class="wrapper-block">
+                      <div class="wrapper-block__img"><img src="img/hint-icon.svg" alt="icon"/></div>
+                      <p>Быстрый просмотр</p>
+                    </div>
+                  </button><a href="#"> 
+                    <div class="card__label-one"> <picture><source srcset="img/sales-icon.webp" type="image/webp"><img class="card-sales" src="img/sales-icon.png" alt="img"/></picture></div>
+                    <div class="card__item-img"> <picture><source srcset="img//sales-three.webp" type="image/webp"><img src="img//sales-three.png" alt="img"/></picture></div>
+                    <p class="card__source">Азбука</p>
+                    <p class="card__info">Восхождение Героя Щита. Том 16.</p>
+                    <div class="card__price">
+                      <p class="card__price-cost">790 <span>₽</span></p>
+                      <p class="card__price-old">990 <span>₽</span></p>
+                    </div></a>
+                  <div class="card__buttons">
+                    <button class="card__buttons-buy">В корзину</button>
+                    <button class="card__buttons-like">
+                      <svg class="icon">
+                        <use xlink:href="img/icons/icons.svg#btn-like"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="card__item">
+                  <button class="card__hint js-open-modal" data-modal="2">
+                    <div class="wrapper-block">
+                      <div class="wrapper-block__img"><img src="img/hint-icon.svg" alt="icon"/></div>
+                      <p>Быстрый просмотр</p>
+                    </div>
+                  </button><a href="#"> 
+                    <div class="card__label-one"><picture><source srcset="img/new-icon.webp" type="image/webp"><img class="card-new" src="img/new-icon.png" alt="img"/></picture></div>
+                    <div class="card__label-three"><img class="card-fire" src="img/fire-icon.svg" alt="img"/></div>
+                    <div class="card__item-img"> <picture><source srcset="img/hit-three.webp" type="image/webp"><img src="img/hit-three.png" alt="img"/></picture></div>
+                    <p class="card__source">Фигурки</p>
+                    <p class="card__info">Funko POP! Animation Naruto Shippuden Shikamaru Nara</p>
+                    <div class="card__price">
+                      <p class="card__price-cost">3 890 <span>₽</span></p>
+                    </div></a>
+                  <div class="card__buttons">
+                    <button class="card__buttons-buy">В корзину</button>
+                    <button class="card__buttons-like">
+                      <svg class="icon">
+                        <use xlink:href="img/icons/icons.svg#btn-like"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="card__item">
+                  <button class="card__hint js-open-modal" data-modal="2">
+                    <div class="wrapper-block">
+                      <div class="wrapper-block__img"><img src="img/hint-icon.svg" alt="icon"/></div>
+                      <p>Быстрый просмотр</p>
+                    </div>
+                  </button><a href="#"> 
+                    <div class="card__label-one"> <picture><source srcset="img/new-icon.webp" type="image/webp"><img class="card-new" src="img/new-icon.png" alt="img"/></picture></div>
+                    <div class="card__label-three"><img class="card-fire" src="img/fire-icon.svg" alt="img"/></div>
+                    <div class="card__item-img"> <picture><source srcset="img/hit-five.webp" type="image/webp"><img src="img/hit-five.png" alt="img"/></picture></div>
+                    <p class="card__source">Фигурки</p>
+                    <p class="card__info">Funko POP! Animation Boruto Boruto (GW) (Exc)</p>
+                    <div class="card__price">
+                      <p class="card__price-cost">1 790 <span>₽</span></p>
+                    </div></a>
+                  <div class="card__buttons">
+                    <button class="card__buttons-buy">В корзину</button>
+                    <button class="card__buttons-like">
+                      <svg class="icon">
+                        <use xlink:href="img/icons/icons.svg#btn-like"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="card__item">
+                  <button class="card__hint js-open-modal" data-modal="2">
+                    <div class="wrapper-block">
+                      <div class="wrapper-block__img"><img src="img/hint-icon.svg" alt="icon"/></div>
+                      <p>Быстрый просмотр</p>
+                    </div>
+                  </button><a href="#"> 
+                    <div class="card__label-one"><picture><source srcset="img/new-icon.webp" type="image/webp"><img class="card-new" src="img/new-icon.png" alt="img"/></picture></div>
+                    <div class="card__label-two"><picture><source srcset="img/sales-icon.webp" type="image/webp"><img class="card-sales" src="img/sales-icon.png" alt="img"/></picture></div>
+                    <div class="card__item-img"> <picture><source srcset="img/manga-four.webp" type="image/webp"><img src="img/manga-four.png" alt="img"/></picture></div>
+                    <p class="card__source">Манга</p>
+                    <p class="card__info">Стальной Алхимик. Книга 16</p>
+                    <div class="card__price">
+                      <p class="card__price-cost">790 <span>₽</span></p>
+                      <p class="card__price-old">990 <span>₽</span></p>
+                    </div></a>
+                  <div class="card__buttons">
+                    <button class="card__buttons-buy">В корзину</button>
+                    <button class="card__buttons-like">
+                      <svg class="icon">
+                        <use xlink:href="img/icons/icons.svg#btn-like"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="card__item">
+                  <button class="card__hint js-open-modal" data-modal="2">
+                    <div class="wrapper-block">
+                      <div class="wrapper-block__img"><img src="img/hint-icon.svg" alt="icon"/></div>
+                      <p>Быстрый просмотр</p>
+                    </div>
+                  </button><a href="#"> 
+                    <div class="card__label-one"><picture><source srcset="img/sales-icon.webp" type="image/webp"><img class="card-sales" src="img/sales-icon.png" alt="img"/></picture></div>
+                    <div class="card__item-img"> <picture><source srcset="img/manga-one.webp" type="image/webp"><img src="img/manga-one.png" alt="img"/></picture></div>
+                    <p class="card__source">Манга</p>
+                    <p class="card__info">Манга Магическая Битва. Том 1</p>
+                    <div class="card__price">
+                      <p class="card__price-cost">790 <span>₽</span></p>
+                      <p class="card__price-old">990 <span>₽</span></p>
+                    </div></a>
+                  <div class="card__buttons">
+                    <button class="card__buttons-buy">В корзину</button>
+                    <button class="card__buttons-like">
+                      <svg class="icon">
+                        <use xlink:href="img/icons/icons.svg#btn-like"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="card__item">
+                  <button class="card__hint js-open-modal" data-modal="2">
+                    <div class="wrapper-block">
+                      <div class="wrapper-block__img"><img src="img/hint-icon.svg" alt="icon"/></div>
+                      <p>Быстрый просмотр</p>
+                    </div>
+                  </button><a href="#"> 
+                    <div class="card__label-one"><picture><source srcset="img/sales-icon.webp" type="image/webp"><img class="card-sales" src="img/sales-icon.png" alt="img"/></picture></div>
+                    <div class="card__item-img"> <picture><source srcset="img/figurines-two.webp" type="image/webp"><img src="img/figurines-two.png" alt="img"/></picture></div>
+                    <p class="card__source">Азбука</p>
+                    <p class="card__info">Дневник будущего. Мозаика					</p>
+                    <div class="card__price">
+                      <p class="card__price-cost">790 <span>₽</span></p>
+                      <p class="card__price-old">990 <span>₽</span></p>
+                    </div></a>
+                  <div class="card__buttons">
+                    <button class="card__buttons-buy">В корзину</button>
+                    <button class="card__buttons-like">
+                      <svg class="icon">
+                        <use xlink:href="img/icons/icons.svg#btn-like"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="card__item">
+                  <button class="card__hint js-open-modal" data-modal="2">
+                    <div class="wrapper-block">
+                      <div class="wrapper-block__img"><img src="img/hint-icon.svg" alt="icon"/></div>
+                      <p>Быстрый просмотр</p>
+                    </div>
+                  </button><a href="#">
+                    <div class="card__label-one"><picture><source srcset="img/new-icon.webp" type="image/webp"><img class="card-new" src="img/new-icon.png" alt="img"/></picture></div>
+                    <div class="card__label-three"><img class="card-fire" src="img/fire-icon.svg" alt="img"/></div>
+                    <div class="card__item-img"> <picture><source srcset="img/manga-two.webp" type="image/webp"><img src="img/manga-two.png" alt="img"/></picture></div>
+                    <p class="card__source">Манга</p>
+                    <p class="card__info">Стальной Алхимик. Книга 16</p>
+                    <div class="card__price">
+                      <p class="card__price-cost">790 <span>₽</span></p>
+                    </div></a>
+                  <div class="card__buttons">
+                    <button class="card__buttons-buy">В корзину</button>
+                    <button class="card__buttons-like">
+                      <svg class="icon">
+                        <use xlink:href="img/icons/icons.svg#btn-like"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="card__item">
+                  <button class="card__hint js-open-modal" data-modal="2">
+                    <div class="wrapper-block">
+                      <div class="wrapper-block__img"><img src="img/hint-icon.svg" alt="icon"/></div>
+                      <p>Быстрый просмотр</p>
+                    </div>
+                  </button><a href="#"> 
+                    <div class="card__label-one"><picture><source srcset="img/new-icon.webp" type="image/webp"><img class="card-new" src="img/new-icon.png" alt="img"/></picture></div>
+                    <div class="card__item-img"><picture><source srcset="img/figurines-six.webp" type="image/webp"><img src="img/figurines-six.png" alt="img"/></picture></div>
+                    <p class="card__source">Азбука</p>
+                    <p class="card__info">V.S.O.F. Mazinger Z</p>
+                    <div class="card__price">
+                      <p class="card__price-cost">790 <span>₽</span></p>
+                    </div></a>
+                  <div class="card__buttons">
+                    <button class="card__buttons-buy">В корзину</button>
+                    <button class="card__buttons-like">
+                      <svg class="icon">
+                        <use xlink:href="img/icons/icons.svg#btn-like"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="card__item">
+                  <button class="card__hint js-open-modal" data-modal="2">
+                    <div class="wrapper-block">
+                      <div class="wrapper-block__img"><img src="img/hint-icon.svg" alt="icon"/></div>
+                      <p>Быстрый просмотр</p>
+                    </div>
+                  </button><a href="#"> 
+                    <div class="card__label-one"><picture><source srcset="img/new-icon.webp" type="image/webp"><img class="card-new" src="img/new-icon.png" alt="img"/></picture></div>
+                    <div class="card__item-img"> <picture><source srcset="img/manga-five.webp" type="image/webp"><img src="img/manga-five.png" alt="img"/></picture></div>
+                    <p class="card__source">Манга</p>
+                    <p class="card__info">Восхождение Героя Щита. Том 16.</p>
+                    <div class="card__price">
+                      <p class="card__price-cost">790 <span>₽</span></p>
+                    </div></a>
+                  <div class="card__buttons">
+                    <button class="card__buttons-buy">В корзину</button>
+                    <button class="card__buttons-like">
+                      <svg class="icon">
+                        <use xlink:href="img/icons/icons.svg#btn-like"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="card__item">
+                  <button class="card__hint js-open-modal" data-modal="2">
+                    <div class="wrapper-block">
+                      <div class="wrapper-block__img"><img src="img/hint-icon.svg" alt="icon"/></div>
+                      <p>Быстрый просмотр</p>
+                    </div>
+                  </button><a href="#"> 
+                    <div class="card__label-one"><picture><source srcset="img/new-icon.webp" type="image/webp"><img class="card-new" src="img/new-icon.png" alt="img"/></picture></div>
+                    <div class="card__item-img"> <picture><source srcset="img/figurines-one.webp" type="image/webp"><img src="img/figurines-one.png" alt="img"/></picture></div>
+                    <p class="card__source">Азбука</p>
+                    <p class="card__info">Figuarts Mini Re:Zero - Ram</p>
+                    <div class="card__price">
+                      <p class="card__price-cost">790 <span>₽</span></p>
+                    </div></a>
+                  <div class="card__buttons">
+                    <button class="card__buttons-buy">В корзину</button>
+                    <button class="card__buttons-like">
+                      <svg class="icon">
+                        <use xlink:href="img/icons/icons.svg#btn-like"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="card__item">
+                  <button class="card__hint js-open-modal" data-modal="2">
+                    <div class="wrapper-block">
+                      <div class="wrapper-block__img"><img src="img/hint-icon.svg" alt="icon"/></div>
+                      <p>Быстрый просмотр</p>
+                    </div>
+                  </button><a href="#"> 
+                    <div class="card__label-one"><picture><source srcset="img/new-icon.webp" type="image/webp"><img class="card-new" src="img/new-icon.png" alt="img"/></picture></div>
+                    <div class="card__label-two"><picture><source srcset="img/sales-icon.webp" type="image/webp"><img class="card-sales" src="img/sales-icon.png" alt="img"/></picture></div>
+                    <div class="card__item-img"> <picture><source srcset="img/manga-three.webp" type="image/webp"><img src="img/manga-three.png" alt="img"/></picture></div>
+                    <p class="card__source">Манга</p>
+                    <p class="card__info">Призрак в доспехах 1,5: Процессор с человеческой погрешностью</p>
+                    <div class="card__price">
+                      <p class="card__price-cost">790 <span>₽</span></p>
+                      <p class="card__price-old">990 <span>₽</span></p>
+                    </div></a>
+                  <div class="card__buttons">
+                    <button class="card__buttons-buy">В корзину</button>
+                    <button class="card__buttons-like">
+                      <svg class="icon">
+                        <use xlink:href="img/icons/icons.svg#btn-like"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="card__item">
+                  <button class="card__hint js-open-modal" data-modal="2">
+                    <div class="wrapper-block">
+                      <div class="wrapper-block__img"><img src="img/hint-icon.svg" alt="icon"/></div>
+                      <p>Быстрый просмотр</p>
+                    </div>
+                  </button><a href="#"> 
+                    <div class="card__label-one"><picture><source srcset="img/new-icon.webp" type="image/webp"><img class="card-new" src="img/new-icon.png" alt="img"/></picture></div>
+                    <div class="card__item-img"> <picture><source srcset="img/figurines-three.webp" type="image/webp"><img src="img/figurines-three.png" alt="img"/></picture></div>
+                    <p class="card__source">Азбука</p>
+                    <p class="card__info">Fate/Grand Order - Lancer Valkyrie (Thrud) 1/7 Scale Figure</p>
+                    <div class="card__price">
+                      <p class="card__price-cost">790 <span>₽</span></p>
+                    </div></a>
+                  <div class="card__buttons">
+                    <button class="card__buttons-buy">В корзину</button>
+                    <button class="card__buttons-like">
+                      <svg class="icon">
+                        <use xlink:href="img/icons/icons.svg#btn-like"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="card__item">
+                  <button class="card__hint js-open-modal" data-modal="2">
+                    <div class="wrapper-block">
+                      <div class="wrapper-block__img"><img src="img/hint-icon.svg" alt="icon"/></div>
+                      <p>Быстрый просмотр</p>
+                    </div>
+                  </button><a href="#"> 
+                    <div class="card__label-one"><picture><source srcset="img/new-icon.webp" type="image/webp"><img class="card-new" src="img/new-icon.png" alt="img"/></picture></div>
+                    <div class="card__item-img"> <picture><source srcset="img/figurines-four.webp" type="image/webp"><img src="img/figurines-four.png" alt="img"/></picture></div>
+                    <p class="card__source">Азбука</p>
+                    <p class="card__info">The IdolmaSter Cinderella Girls Espresto Miho Kohinata</p>
+                    <div class="card__price">
+                      <p class="card__price-cost">790 <span>₽</span></p>
+                    </div></a>
+                  <div class="card__buttons">
+                    <button class="card__buttons-buy">В корзину</button>
+                    <button class="card__buttons-like">
+                      <svg class="icon">
+                        <use xlink:href="img/icons/icons.svg#btn-like"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="card__item">
+                  <button class="card__hint js-open-modal" data-modal="2">
+                    <div class="wrapper-block">
+                      <div class="wrapper-block__img"><img src="img/hint-icon.svg" alt="icon"/></div>
+                      <p>Быстрый просмотр</p>
+                    </div>
+                  </button><a href="#"> 
+                    <div class="card__label-one"><picture><source srcset="img/sales-icon.webp" type="image/webp"><img class="card-sales" src="img/sales-icon.png" alt="img"/></picture></div>
+                    <div class="card__item-img"> <picture><source srcset="img/figurines-five.webp" type="image/webp"><img src="img/figurines-five.png" alt="img"/></picture></div>
+                    <p class="card__source">Азбука</p>
+                    <p class="card__info">Boruto Naruto Next Generations Vibration Stars Uzumaki Boruto</p>
+                    <div class="card__price">
+                      <p class="card__price-cost">790 <span>₽</span></p>
+                      <p class="card__price-old">990 <span>₽</span></p>
+                    </div></a>
+                  <div class="card__buttons">
+                    <button class="card__buttons-buy">В корзину</button>
+                    <button class="card__buttons-like">
+                      <svg class="icon">
+                        <use xlink:href="img/icons/icons.svg#btn-like"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="card__item">
+                  <button class="card__hint js-open-modal" data-modal="2">
+                    <div class="wrapper-block">
+                      <div class="wrapper-block__img"><img src="img/hint-icon.svg" alt="icon"/></div>
+                      <p>Быстрый просмотр</p>
+                    </div>
+                  </button><a href="#"> 
+                    <div class="card__label-one"><picture><source srcset="img/sales-icon.webp" type="image/webp"><img class="card-sales" src="img/sales-icon.png" alt="img"/></picture></div>
+                    <div class="card__item-img"> <picture><source srcset="img//sales-one.webp" type="image/webp"><img src="img//sales-one.png" alt="img"/></picture></div>
+                    <p class="card__source">Азбука</p>
+                    <p class="card__info">Манга Магическая Битва. Том 1</p>
+                    <div class="card__price">
+                      <p class="card__price-cost">790 <span>₽</span></p>
+                      <p class="card__price-old">990 <span>₽</span></p>
+                    </div></a>
+                  <div class="card__buttons">
+                    <button class="card__buttons-buy">В корзину</button>
+                    <button class="card__buttons-like">
+                      <svg class="icon">
+                        <use xlink:href="img/icons/icons.svg#btn-like"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="card__item">
+                  <button class="card__hint js-open-modal" data-modal="2">
+                    <div class="wrapper-block">
+                      <div class="wrapper-block__img"><img src="img/hint-icon.svg" alt="icon"/></div>
+                      <p>Быстрый просмотр</p>
+                    </div>
+                  </button><a href="#">
+                    <div class="card__label-one"> <picture><source srcset="img/sales-icon.webp" type="image/webp"><img class="card-sales" src="img/sales-icon.png" alt="img"/></picture></div>
+                    <div class="card__item-img"> <picture><source srcset="img//sales-two.webp" type="image/webp"><img src="img//sales-two.png" alt="img"/></picture></div>
+                    <p class="card__source">Азбука</p>
+                    <p class="card__info">Призрак в доспехах 1,5: Процессор с человеческой погрешностью</p>
+                    <div class="card__price">
+                      <p class="card__price-cost">790 <span>₽</span></p>
+                      <p class="card__price-old">990 <span>₽</span></p>
+                    </div></a>
+                  <div class="card__buttons">
+                    <button class="card__buttons-buy">В корзину</button>
+                    <button class="card__buttons-like">
+                      <svg class="icon">
+                        <use xlink:href="img/icons/icons.svg#btn-like"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="card__item">
+                  <button class="card__hint js-open-modal" data-modal="2">
+                    <div class="wrapper-block">
+                      <div class="wrapper-block__img"><img src="img/hint-icon.svg" alt="icon"/></div>
+                      <p>Быстрый просмотр</p>
+                    </div>
+                  </button><a href="#"> 
+                    <div class="card__label-one"><picture><source srcset="img/new-icon.webp" type="image/webp"><img class="card-new" src="img/new-icon.png" alt="img"/></picture></div>
+                    <div class="card__label-two"><picture><source srcset="img/sales-icon.webp" type="image/webp"><img class="card-sales" src="img/sales-icon.png" alt="img"/></picture></div>
+                    <div class="card__label-three"><img class="card-fire" src="img/fire-icon.svg" alt="img"/></div>
+                    <div class="card__item-img"> <picture><source srcset="img/hit-two.webp" type="image/webp"><img src="img/hit-two.png" alt="img"/></picture></div>
+                    <p class="card__source">Фигурки</p>
+                    <p class="card__info">Фигурка Funko POP! TV Witcher Geralt w/Chase</p>
+                    <div class="card__price">
+                      <p class="card__price-cost">1 899 <span>₽</span></p>
+                      <p class="card__price-old">590 <span>₽</span></p>
+                    </div></a>
+                  <div class="card__buttons">
+                    <button class="card__buttons-buy">В корзину</button>
+                    <button class="card__buttons-like">
+                      <svg class="icon">
+                        <use xlink:href="img/icons/icons.svg#btn-like"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="card__item">
+                  <button class="card__hint js-open-modal" data-modal="2">
+                    <div class="wrapper-block">
+                      <div class="wrapper-block__img"><img src="img/hint-icon.svg" alt="icon"/></div>
+                      <p>Быстрый просмотр</p>
+                    </div>
+                  </button><a href="#"> 
+                    <div class="card__label-one"> <picture><source srcset="img/sales-icon.webp" type="image/webp"><img class="card-sales" src="img/sales-icon.png" alt="img"/></picture></div>
+                    <div class="card__item-img"> <picture><source srcset="img//sales-four.webp" type="image/webp"><img src="img//sales-four.png" alt="img"/></picture></div>
+                    <p class="card__source">Азбука</p>
+                    <p class="card__info">Стальной Алхимик. Книга 16</p>
+                    <div class="card__price">
+                      <p class="card__price-cost">790 <span>₽</span></p>
+                      <p class="card__price-old">990 <span>₽</span></p>
+                    </div></a>
+                  <div class="card__buttons">
+                    <button class="card__buttons-buy">В корзину</button>
+                    <button class="card__buttons-like">
+                      <svg class="icon">
+                        <use xlink:href="img/icons/icons.svg#btn-like"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="card__item">
+                  <button class="card__hint js-open-modal" data-modal="2">
+                    <div class="wrapper-block">
+                      <div class="wrapper-block__img"><img src="img/hint-icon.svg" alt="icon"/></div>
+                      <p>Быстрый просмотр</p>
+                    </div>
+                  </button><a href="#"> 
+                    <div class="card__label-one"><picture><source srcset="img/new-icon.webp" type="image/webp"><img class="card-new" src="img/new-icon.png" alt="img"/></picture></div>
+                    <div class="card__item-img"> <picture><source srcset="img/figurines-three.webp" type="image/webp"><img src="img/figurines-three.png" alt="img"/></picture></div>
+                    <p class="card__source">Азбука</p>
+                    <p class="card__info">Fate/Grand Order - Lancer Valkyrie (Thrud) 1/7 Scale Figure</p>
+                    <div class="card__price">
+                      <p class="card__price-cost">790 <span>₽</span></p>
+                    </div></a>
+                  <div class="card__buttons">
+                    <button class="card__buttons-buy">В корзину</button>
+                    <button class="card__buttons-like">
+                      <svg class="icon">
+                        <use xlink:href="img/icons/icons.svg#btn-like"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="trading__nav">
+                  <button class="trading__nav-btn">Показать ещё</button>
+                  <div class="trading__nav-list"><a class="trading__nav-prev" href="#">Назад</a>
+                    <div class="trading__nav-page"><a href="#">1</a><a href="#">2</a><a href="#">...</a><a href="#">10</a><a class="active" href="#">11</a><a href="#">12</a><a href="#">...</a><a href="#">24</a><a href="#">25</a></div><a class="trading__nav-prev" href="#">Вперёд</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="description-section">
+        <div class="container">
+          <div class="description">
+            <h2>Аниме фигурки</h2>
+            <p>Сегодня производство фигурок аниме превратилось в целую индустрию. Они уверенно завоевывают популярность во всем мире. Они настолько оригинальны и привлекательны, что часто купить аниме фигурки желают даже те, кто не является поклонником этой субкультуры. Что уж говорить об истинных поклонниках, которые давно полюбили и даже сроднились с персонажами аниме!</p>
+            <p>Фигурки могут изображать самых разнообразных персонажей аниме, манги, игры или фильмов, в том числе мифологических существ.</p>
+            <p>Секрет их популярности во многом кроется в высоком качестве и детализации всех мелочей. Продумывается каждая деталь, что и придает фигурке высокую степень реалистичности. Однако такие характеристики присущи только оригинальным изделиям. К сожалению, их популярность привела к появлению большого количества подделок на рынке. Если вы хотите купить аниме фигурки оригинал, то приглашаем вам на наш сайт! В каталоге вы найдете широкий выбор, ассортимент регулярно обновляется и пополняется.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__andres">
+            <div class="footer__logo"><picture><source srcset="img/footer-logo.webp" type="image/webp"><img src="img/footer-logo.png" alt="img" loading="lazy"/></picture></div><a href="mailto:info@nani.ru">info@nani.ru</a>
+            <p>г. Казань, ул. Неизвестная, д. 100</p>
+          </div>
+          <div class="footer__btn">
+            <div class="footer__btn-list"><a href="#">Атрибутика</a><a href="#">Аксессуары</a><a href="#">Конструктор</a><a href="#">Сувениры</a><a href="#">Одежда</a></div>
+            <div class="footer__btn-list"><a href="#">Игрушки</a><a href="#">Литература</a><a href="#">Косплей</a><a href="#">Игры</a><a href="#">Канцелярия</a></div>
+            <div class="footer__btn-list"><a href="#">Хобби и творчество</a><a href="#">Дом и быт</a><a href="#">Прочее</a></div>
+          </div>
+          <div class="footer__btn footer__btn_main"> 
+            <div class="footer__btn-list"><a href="#">Атрибутика</a><a href="#">Аксессуары</a><a href="#">Конструктор</a><a href="#">Сувениры</a><a href="#">Одежда</a><a href="#">Игрушки</a><a href="#">Литература</a></div>
+            <div class="footer__btn-list"><a href="#">Косплей</a><a href="#">Игры</a><a href="#">Канцелярия</a><a href="#">Хобби и творчество</a><a href="#">Дом и быт</a><a href="#">Прочее</a></div>
+          </div>
+          <div class="footer__info"> 
+            <div class="footer__info-list"><a href="#"> О нас</a><a href="#"> Доставка и оплата</a><a href="#"> Возврат и гарантия</a><a href="#"> Статьи</a></div>
+            <div class="footer__info-list"><a href="#"> Новости</a><a href="#"> Контакты</a><a href="#"> F.A.Q</a></div>
+          </div>
+          <div class="footer__social"><a href="#"><img src="img/icon-vk.svg" alt="icon" loading="lazy"/></a><a href="#"><img src="img/icon-tg.svg" alt="icon" loading="lazy"/></a></div>
+        </div>
+        <div class="footer__bottom"> 
+          <p class="footer__date"></p><a class="footer__bottom-politic" href="#">Политика конфиденциальности</a><a class="footer__bottom-agreement" href="#">Пользовательское соглашение</a>
+          <div class="footer__bottom-btn"><a href="#">Политика конфиденциальности</a><a href="#">Пользовательское соглашение</a></div>
+          <div class="footer__payment"><img src="img/visa.svg" alt="img" loading="lazy"/><img src="img/mastercard.svg" alt="img" loading="lazy"/><img src="img/mir.svg" alt="img" loading="lazy"/></div>
+          <div class="footer__developers"><a class="wrapper-block" href="https://siart.pro/" target="_blank">
+              <div class="wrapper-block__img"><img src="img/developers.svg" alt="icon" loading="lazy"/></div>
+              <p>Разработка сайта</p></a></div>
+        </div>
+      </div>
+    </footer>
+    <div id="toTop">
+      <svg class="icon">
+        <use xlink:href="img/icons/icons.svg#toTop"></use>
+      </svg>
+    </div>
+    <div class="modal" data-modal="1"><a class="js-open-modal modal1" href="#" data-modal="1"></a>
+      <div class="modal__cross js-modal-close">
+        <svg class="icon">
+          <use xlink:href="img/icons/icons.svg#menu-close" alt="close"></use>
+        </svg>
+      </div>
+      <div class="modal__wrapper">
+        <p class="modal__title">Давайте дружить :)</p>
+        <div class="modal__img"><picture><source srcset="img/icon-reg.webp" type="image/webp"><img src="img/icon-reg.png" alt="icon" loading="lazy"/></picture></div>
+        <div class="modal__form">
+          <div class="modal__tel-block">
+            <input class="modal__input form-tel" type="tel" placeholder="Телефон*"/>
+            <div class="error-tel">Введите номер телефона</div>
+          </div>
+          <button class="modal__btn" onclick="ValidForm()">Войти по номеру телефона</button>
+          <div class="modal__agreement modal__checkbox">
+            <div class="checkbox">
+              <input class="custom-checkbox modal__form-checkbox" type="checkbox" id="check-agree"/>
+              <label for="check-agree">
+                <p>Я согласен с условиями <a href="#" target="_blank">пользовательского соглашения.</a></p>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" data-modal="3"><a class="js-open-modal modal3" href="#" data-modal="3"></a>
+      <div class="modal__cross js-modal-close">
+        <svg class="icon">
+          <use xlink:href="img/icons/icons.svg#menu-close" alt="close"></use>
+        </svg>
+      </div>
+      <div class="modal__wrapper">
+        <p class="modal__title">Введите код из смс</p>
+        <div class="modal__info-sms">
+          <p>Отправили на номер <br><a class="value-tel" href="tel:+79250000000">+7 (925) 000 00 00</a>
+            <button onclick="newNumber()">изменить</button>
+          </p>
+        </div>
+        <div class="modal__form">
+          <div class="modal__sms-block">
+            <div class="signin-sms__wrap">
+              <input class="sms-input" type="tel" maxlength="1" tabindex="1"/>
+              <input class="sms-input" type="tel" maxlength="1" tabindex="2"/>
+              <input class="sms-input" type="tel" maxlength="1" tabindex="3"/>
+              <input class="sms-input" type="tel" maxlength="1" tabindex="4"/>
+            </div>
+          </div>
+          <button class="modal__btn" onclick="ValidSms()">Войти</button>
+          <div class="modal__cod-again">
+            <button>Запросить код повторно</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal_end" data-modal="4"><a class="js-open-modal modal4" href="#" data-modal="4"></a>
+      <div class="modal__cross js-modal-close">
+        <svg class="icon">
+          <use xlink:href="img/icons/icons.svg#menu-close" alt="close"></use>
+        </svg>
+      </div>
+      <div class="modal__wrapper">
+        <div class="modal__img"><picture><source srcset="img/modal-end.webp" type="image/webp"><img src="img/modal-end.png" alt="icon" loading="lazy"/></picture></div>
+        <p class="modal__title">Спасибочки!</p>
+        <button class="modal__btn-end js-modal-close">Пожалуйста :)</button>
+      </div>
+    </div>
+    <div class="modal modal-cart" data-modal="2">
+      <div class="modal__cross js-modal-close">
+        <svg class="icon">
+          <use xlink:href="img/icons/icons.svg#menu-close" alt="close"></use>
+        </svg>
+      </div>
+      <div class="modal__wrapper modal__wrapper_cart">
+        <div class="modal__slider-wrapper">
+          <div class="modal__slider-main">
+            <div class="slider-content"><picture><source srcset="img/modal-cart.webp" type="image/webp"><img class="modal-slider-img" src="img/modal-cart.png" alt="img" loading="lazy"/></picture></div>
+            <div class="slider-content"><picture><source srcset="img/modal-cart.webp" type="image/webp"><img class="modal-slider-img" src="img/modal-cart.png" alt="img" loading="lazy"/></picture></div>
+            <div class="slider-content"><picture><source srcset="img/modal-cart.webp" type="image/webp"><img class="modal-slider-img" src="img/modal-cart.png" alt="img" loading="lazy"/></picture></div>
+          </div>
+        </div>
+        <div class="modal__cart-info">
+          <div class="modal__cart-top">
+            <p>Артикул: 9005</p>
+            <div class="wrapper-block">
+              <div class="wrapper-block__img"><img src="img/modal-icon_cart.svg" alt="icon" loading="lazy"/></div>
+              <p>В наличии</p>
+            </div>
+          </div>
+          <p class="modal__cart-title">Figuarts Mini Demon Slayer LITTLE NEZUKO</p>
+          <div class="modal__cart-description">
+            <p>Вид товара</p><a href="#">Вид Манга</a>
+          </div>
+          <div class="modal__cart-description">
+            <p>Франшиза</p><a href="#">Kimetsu no Yaiba</a>
+          </div>
+          <div class="modal__cart-description">
+            <p>Бренд</p><a href="#">Figuarts Mini</a>
+          </div>
+          <div class="modal__cart-description">
+            <p>Производитель:</p><a href="#">Tamashii Nations</a>
+          </div>
+          <div class="modal__cart-price">
+            <p class="modal__cart-cost">3 890 <span>₽</span></p>
+            <p class="modal__cart-old">4 990 <span>₽</span></p>
+          </div>
+          <div class="modal__cart-buttons">
+            <button class="modal__cart-buy">
+              <div class="wrapper-block">
+                <div class="wrapper-block__img"><img src="img/modal-icon_btn.svg" alt="icon" loading="lazy"/></div>
+                <p>В корзину</p>
+              </div>
+            </button>
+            <button class="modal__cart-like">
+              <svg class="icon">
+                <use xlink:href="img/icons/icons.svg#btn-like"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div><!-- Подложка под модальным окном -->
+    <div class="overlay js-overlay-modal"></div>
+    <script src="libs/jquery-3.6.0.js?_v=20220927183844" defer="defer"></script>
+    <script src="libs/slick/slick.min.js?_v=20220927183844" defer="defer"></script>
+    <script src="libs/CustomScrollbar/CustomScrollbar.concat.min.js?_v=20220927183844" defer="defer"></script>
+    <script src="libs/jqureUI.js?_v=20220927183844" defer="defer"></script>
+    <script src="libs/jqureTach.js?_v=20220927183844" defer="defer"></script>
+    <script src="libs/main.js?_v=20220927183844" defer="defer"></script>
+    <script src="libs/catalogjs.js?_v=20220927183844" defer="defer"></script>
+    <script src="js/app.min.js?_v=20220927183844" defer="defer"></script>
+  </body>
+</html>

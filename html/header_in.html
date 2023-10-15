@@ -1,0 +1,82 @@
+
+<header class="header" id="header">
+  <div class="container">
+    <div class="header__wrapper"><a class="header__logo" href="./index.html"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="icon"/></picture></a>
+      <button class="header__logo-main">
+        <div class="wrapper-block">
+          <div class="wrapper-block__img" onclick="openNav()"><img src="img/logo-btn.svg" alt="icon"/></div><a class="wrapper-block__img" href="./index.html"><img src="img/logo-mob.svg" alt="icon"/></a>
+        </div>
+      </button>
+      <button class="header__menu" onclick="openNav()">
+        <div class="wrapper-block">
+          <div class="wrapper-block__img"><img src="img/header-btn.svg" alt="icon"/></div>
+          <p>Меню</p>
+        </div>
+      </button>
+      <div class="header__input">
+        <input class="header__search" type="text" name="header__search" placeholder="Поиск по названию"/>
+        <button class="header__magnifier"><img src="img/header-search.svg" alt="img"/></button>
+        <button class="header__toclose"><img src="img/to-close.svg" alt="img"/></button>
+        <div class="header__hint"><a href="#">Текстовая ссылка</a><a href="#">Текстовая ссылка</a><a href="#">Текстовая ссылка</a><a href="#">Текстовая ссылка</a><a href="#">Текстовая ссылка</a></div>
+      </div>
+      <div class="header__text">
+        <p>Остались вопросы?</p>
+        <p> <span>Напишите нам</span></p>
+      </div>
+      <div class="header__social"><a href="#"><img src="img/icon-vk.svg" alt="icon"/></a><a href="#"><img src="img/icon-tg.svg" alt="icon"/></a></div>
+      <div class="header__shop">
+        <div class="header__office"><a class="header__connect js-open-modal" href="#" data-modal="1"><img src="img/header-one_in.svg" alt="icon"/></a>
+          <div class="header__info-hiht">Перейти в личный кабинет</div>
+        </div>
+        <div class="header__like"><a href="#"><img src="img/header-two.svg" alt="icon"/></a>
+          <div class="header__info-hiht">В избранном 22 товара</div>
+          <div class="header__remember">22</div>
+        </div>
+        <div class="header__basket"><a href="#"><img src="img/header-three.svg" alt="icon"/></a>
+          <div class="header__info-hiht">В корзине 22 товара</div>
+          <div class="header__buy">22</div>
+        </div>
+      </div>
+    </div>
+    <div class="header__btn">
+      <button class="header__menu" onclick="openNav()">
+        <div class="wrapper-block">
+          <div class="wrapper-block__img"><img src="img/header-btn.svg" alt="icon"/></div>
+          <p>Меню</p>
+        </div>
+      </button>
+      <div class="header__tag"><a class="header__select active-tag header__select_one" href="#">Предзаказы</a><a class="header__select active-tag header__select_two" href="#">Скидки</a><a class="header__select" href="#">Литература</a><a class="header__select" href="#">Аксессуары</a><a class="header__select" href="#">Одежда</a><a class="header__select" href="#">Игрушки</a><a class="header__select" href="#">Косплей</a><a class="header__select" href="#">Канцелярия</a><a class="header__select" href="#">Игры</a></div>
+    </div>
+    <div class="overlay-back"></div>
+    <div class="header__overlay" id="myNav">
+      <button class="header__closebtn" onclick="closeNav()"><img src="img/menu-close.svg" alt="close"/></button>
+      <div class="header__overlay-content">
+        <div class="header__overlay-logo"> <img src="img/menu-logo.svg" alt="img" loading="lazy"/></div>
+        <div class="header__overlay-btn" data-mcs-theme="3d-dark">
+          <div class="header__input">
+            <input class="header__search header__search_mob" type="text" name="header__search" placeholder="Поиск по названию"/>
+            <button class="header__magnifier"><img src="img/header-search.svg" alt="img"/></button>
+            <button class="header__toclose"><img src="img/to-close.svg" alt="img"/></button>
+            <div class="header__hint"><a href="#">Текстовая ссылка</a><a href="#">Текстовая ссылка</a><a href="#">Текстовая ссылка</a><a href="#">Текстовая ссылка</a><a href="#">Текстовая ссылка</a></div>
+          </div><a class="spoler__target" onclick="view(this, 't1'); return false">Каталог товаров</a>
+          <p class="spoler__content menu__catalog" id="t1"><a href="#">Игры</a><a href="#">Одежда</a><a href="#">Игрушки</a><a href="#">Косплей</a><a href="#">Сувениры</a><a href="#">Литература</a><a href="#">Атрибутика</a><a href="#">Аксессуары</a><a href="#">Канцелярия</a><a href="#">Конструктор</a><a href="#">Хобби и творчество</a><a href="#">Дом и быт</a><a href="#">Прочее</a><a href="#">Скидки</a></p><a href="#">О нас</a><a href="#">Доставка и оплата</a><a href="#">Возврат и гарантия</a><a href="#">Статьи</a><a href="#">Отзывы</a><a href="#">Новости</a><a href="#">Контакты</a><a href="#">F.A.Q</a>
+        </div>
+        <div class="header__overlay-bot"> 
+          <div class="header__shop">
+            <div class="header__office"><a class="header__connect js-open-modal" href="#" data-modal="1"><img src="img/header-one_in.svg" alt="icon"/></a>
+              <div class="header__info-hiht">Перейти в личный кабинет</div>
+            </div>
+            <div class="header__like"><a href="#"><img src="img/header-two.svg" alt="icon"/></a>
+              <div class="header__info-hiht">В избранном 22 товара</div>
+              <div class="header__remember">22</div>
+            </div>
+            <div class="header__basket"><a href="#"><img src="img/header-three.svg" alt="icon"/></a>
+              <div class="header__info-hiht">В корзине 22 товара</div>
+              <div class="header__buy">22</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,161 @@
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__andres">
+        <div class="footer__logo"><picture><source srcset="img/footer-logo.webp" type="image/webp"><img src="img/footer-logo.png" alt="img" loading="lazy"/></picture></div><a href="mailto:info@nani.ru">info@nani.ru</a>
+        <p>г. Казань, ул. Неизвестная, д. 100</p>
+      </div>
+      <div class="footer__btn">
+        <div class="footer__btn-list"><a href="#">Атрибутика</a><a href="#">Аксессуары</a><a href="#">Конструктор</a><a href="#">Сувениры</a><a href="#">Одежда</a></div>
+        <div class="footer__btn-list"><a href="#">Игрушки</a><a href="#">Литература</a><a href="#">Косплей</a><a href="#">Игры</a><a href="#">Канцелярия</a></div>
+        <div class="footer__btn-list"><a href="#">Хобби и творчество</a><a href="#">Дом и быт</a><a href="#">Прочее</a></div>
+      </div>
+      <div class="footer__btn footer__btn_main"> 
+        <div class="footer__btn-list"><a href="#">Атрибутика</a><a href="#">Аксессуары</a><a href="#">Конструктор</a><a href="#">Сувениры</a><a href="#">Одежда</a><a href="#">Игрушки</a><a href="#">Литература</a></div>
+        <div class="footer__btn-list"><a href="#">Косплей</a><a href="#">Игры</a><a href="#">Канцелярия</a><a href="#">Хобби и творчество</a><a href="#">Дом и быт</a><a href="#">Прочее</a></div>
+      </div>
+      <div class="footer__info"> 
+        <div class="footer__info-list"><a href="#"> О нас</a><a href="#"> Доставка и оплата</a><a href="#"> Возврат и гарантия</a><a href="#"> Статьи</a></div>
+        <div class="footer__info-list"><a href="#"> Новости</a><a href="#"> Контакты</a><a href="#"> F.A.Q</a></div>
+      </div>
+      <div class="footer__social"><a href="#"><img src="img/icon-vk.svg" alt="icon" loading="lazy"/></a><a href="#"><img src="img/icon-tg.svg" alt="icon" loading="lazy"/></a></div>
+    </div>
+    <div class="footer__bottom"> 
+      <p class="footer__date"></p><a class="footer__bottom-politic" href="#">Политика конфиденциальности</a><a class="footer__bottom-agreement" href="#">Пользовательское соглашение</a>
+      <div class="footer__bottom-btn"><a href="#">Политика конфиденциальности</a><a href="#">Пользовательское соглашение</a></div>
+      <div class="footer__payment"><img src="img/visa.svg" alt="img" loading="lazy"/><img src="img/mastercard.svg" alt="img" loading="lazy"/><img src="img/mir.svg" alt="img" loading="lazy"/></div>
+      <div class="footer__developers"><a class="wrapper-block" href="https://siart.pro/" target="_blank">
+          <div class="wrapper-block__img"><img src="img/developers.svg" alt="icon" loading="lazy"/></div>
+          <p>Разработка сайта</p></a></div>
+    </div>
+  </div>
+</footer>
+<div id="toTop">
+  <svg class="icon">
+    <use xlink:href="img/icons/icons.svg#toTop"></use>
+  </svg>
+</div>
+<div class="modal" data-modal="1"><a class="js-open-modal modal1" href="#" data-modal="1"></a>
+  <div class="modal__cross js-modal-close">
+    <svg class="icon">
+      <use xlink:href="img/icons/icons.svg#menu-close" alt="close"></use>
+    </svg>
+  </div>
+  <div class="modal__wrapper">
+    <p class="modal__title">Давайте дружить :)</p>
+    <div class="modal__img"><picture><source srcset="img/icon-reg.webp" type="image/webp"><img src="img/icon-reg.png" alt="icon" loading="lazy"/></picture></div>
+    <div class="modal__form">
+      <div class="modal__tel-block">
+        <input class="modal__input form-tel" type="tel" placeholder="Телефон*"/>
+        <div class="error-tel">Введите номер телефона</div>
+      </div>
+      <button class="modal__btn" onclick="ValidForm()">Войти по номеру телефона</button>
+      <div class="modal__agreement modal__checkbox">
+        <div class="checkbox">
+          <input class="custom-checkbox modal__form-checkbox" type="checkbox" id="check-agree"/>
+          <label for="check-agree">
+            <p>Я согласен с условиями <a href="#" target="_blank">пользовательского соглашения.</a></p>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal" data-modal="3"><a class="js-open-modal modal3" href="#" data-modal="3"></a>
+  <div class="modal__cross js-modal-close">
+    <svg class="icon">
+      <use xlink:href="img/icons/icons.svg#menu-close" alt="close"></use>
+    </svg>
+  </div>
+  <div class="modal__wrapper">
+    <p class="modal__title">Введите код из смс</p>
+    <div class="modal__info-sms">
+      <p>Отправили на номер <br><a class="value-tel" href="tel:+79250000000">+7 (925) 000 00 00</a>
+        <button onclick="newNumber()">изменить</button>
+      </p>
+    </div>
+    <div class="modal__form">
+      <div class="modal__sms-block">
+        <div class="signin-sms__wrap">
+          <input class="sms-input" type="tel" maxlength="1" tabindex="1"/>
+          <input class="sms-input" type="tel" maxlength="1" tabindex="2"/>
+          <input class="sms-input" type="tel" maxlength="1" tabindex="3"/>
+          <input class="sms-input" type="tel" maxlength="1" tabindex="4"/>
+        </div>
+      </div>
+      <button class="modal__btn" onclick="ValidSms()">Войти</button>
+      <div class="modal__cod-again">
+        <button>Запросить код повторно</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal_end" data-modal="4"><a class="js-open-modal modal4" href="#" data-modal="4"></a>
+  <div class="modal__cross js-modal-close">
+    <svg class="icon">
+      <use xlink:href="img/icons/icons.svg#menu-close" alt="close"></use>
+    </svg>
+  </div>
+  <div class="modal__wrapper">
+    <div class="modal__img"><picture><source srcset="img/modal-end.webp" type="image/webp"><img src="img/modal-end.png" alt="icon" loading="lazy"/></picture></div>
+    <p class="modal__title">Спасибочки!</p>
+    <button class="modal__btn-end js-modal-close">Пожалуйста :)</button>
+  </div>
+</div>
+<div class="modal modal-cart" data-modal="2">
+  <div class="modal__cross js-modal-close">
+    <svg class="icon">
+      <use xlink:href="img/icons/icons.svg#menu-close" alt="close"></use>
+    </svg>
+  </div>
+  <div class="modal__wrapper modal__wrapper_cart">
+    <div class="modal__slider-wrapper">
+      <div class="modal__slider-main">
+        <div class="slider-content"><picture><source srcset="img/modal-cart.webp" type="image/webp"><img class="modal-slider-img" src="img/modal-cart.png" alt="img" loading="lazy"/></picture></div>
+        <div class="slider-content"><picture><source srcset="img/modal-cart.webp" type="image/webp"><img class="modal-slider-img" src="img/modal-cart.png" alt="img" loading="lazy"/></picture></div>
+        <div class="slider-content"><picture><source srcset="img/modal-cart.webp" type="image/webp"><img class="modal-slider-img" src="img/modal-cart.png" alt="img" loading="lazy"/></picture></div>
+      </div>
+    </div>
+    <div class="modal__cart-info">
+      <div class="modal__cart-top">
+        <p>Артикул: 9005</p>
+        <div class="wrapper-block">
+          <div class="wrapper-block__img"><img src="img/modal-icon_cart.svg" alt="icon" loading="lazy"/></div>
+          <p>В наличии</p>
+        </div>
+      </div>
+      <p class="modal__cart-title">Figuarts Mini Demon Slayer LITTLE NEZUKO</p>
+      <div class="modal__cart-description">
+        <p>Вид товара</p><a href="#">Вид Манга</a>
+      </div>
+      <div class="modal__cart-description">
+        <p>Франшиза</p><a href="#">Kimetsu no Yaiba</a>
+      </div>
+      <div class="modal__cart-description">
+        <p>Бренд</p><a href="#">Figuarts Mini</a>
+      </div>
+      <div class="modal__cart-description">
+        <p>Производитель:</p><a href="#">Tamashii Nations</a>
+      </div>
+      <div class="modal__cart-price">
+        <p class="modal__cart-cost">3 890 <span>₽</span></p>
+        <p class="modal__cart-old">4 990 <span>₽</span></p>
+      </div>
+      <div class="modal__cart-buttons">
+        <button class="modal__cart-buy">
+          <div class="wrapper-block">
+            <div class="wrapper-block__img"><img src="img/modal-icon_btn.svg" alt="icon" loading="lazy"/></div>
+            <p>В корзину</p>
+          </div>
+        </button>
+        <button class="modal__cart-like">
+          <svg class="icon">
+            <use xlink:href="img/icons/icons.svg#btn-like"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div><!-- Подложка под модальным окном -->
+<div class="overlay js-overlay-modal"></div>
